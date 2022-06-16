@@ -6,7 +6,6 @@ defmodule ExMon.Player do
 
   defstruct @required_keys
 
-
   def build(name, attack_one, attack_two, heal) do
     %ExMon.Player{
       name: name,
