@@ -12,7 +12,7 @@ defmodule ExMon.Player do
       moves: %{
         attack_one: attack_one,
         attack_two: attack_two,
-        heal: heal,
+        heal: heal
       },
       life: @max_life
     }

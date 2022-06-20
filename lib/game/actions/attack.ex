@@ -32,6 +32,7 @@ defmodule ExMon.Game.Actions.Attack do
     Game.info()
     |> Map.put(opponent, player)
     |> Game.update()
+
     Status.print_move_message(opponent, :attack, damage)
   end
 end

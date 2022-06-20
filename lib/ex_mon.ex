@@ -13,7 +13,7 @@ defmodule ExMon do
     |> create_player("infinite_gauntler_meteor", "snap", "time stone")
     |> Game.start(player)
 
-    Status.print_round_message()
+    Status.print_round_message(Game.info())
   end
 
   def make_move(move) do
@@ -28,6 +28,8 @@ defmodule ExMon do
     case move do
       :heal -> "cura"
       move -> Actions.attack(move)
-      end
+    end
+
+    Status.print_round_message(Game.info())
   end
 end
